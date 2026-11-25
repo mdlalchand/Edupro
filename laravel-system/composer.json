@@ -1,0 +1,26 @@
+{
+    "name": "aloms-english-center/lms-portal",
+    "type": "project",
+    "description": "Aloms English Center — Unified Multi-Role Laravel 11 LMS, Exam, Store & Branch Management System",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.9",
+        "laravel/tinker": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
